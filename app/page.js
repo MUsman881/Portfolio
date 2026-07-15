@@ -467,42 +467,111 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Code Terminal Section (C# Syntax) */}
-        <div className="relative z-10 mt-16 w-full max-w-2xl bg-[#0d0d11] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transform hover:scale-[1.02] hover:border-zinc-700 transition-all duration-500 group mx-auto">
-          <div className="flex items-center justify-between px-4 py-3 border-b border-white/5 bg-zinc-900/40">
-            <div className="flex gap-1.5">
-              <span className="w-3 h-3 rounded-full bg-[#ff5f56]" />
-              <span className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
-              <span className="w-3 h-3 rounded-full bg-[#27c93f]" />
+        {/* Enhanced Code Terminal */}
+        <div className="relative z-10 mt-16 w-full max-w-2xl mx-auto">
+          <div className="bg-[#0c0c14] border border-white/[0.08] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 backdrop-blur-sm hover:border-cyan-500/20 transition-all duration-500 group">
+            {/* Terminal Header */}
+            <div className="flex items-center justify-between px-5 py-3 border-b border-white/[0.06] bg-white/[0.02]">
+              <div className="flex gap-2">
+                <span className="w-3 h-3 rounded-full bg-[#ff5f57]" />
+                <span className="w-3 h-3 rounded-full bg-[#febc2e]" />
+                <span className="w-3 h-3 rounded-full bg-[#28c840]" />
+              </div>
+              <span className="text-[10px] font-mono text-zinc-600 tracking-widest uppercase">Usman.cs — Visual Studio</span>
+              <div className="w-10" />
             </div>
-            <span className="text-xs font-mono text-zinc-500 tracking-wider">Usman.cs — Visual Studio</span>
-            <div className="w-12" />
-          </div>
 
-          <div className="p-6 font-mono text-xs md:text-sm text-zinc-400 text-left overflow-x-auto leading-relaxed">
-            <div><span className="text-blue-400">SoftwareEngineer</span> engineer = <span className="text-teal-400">new</span>()</div>
-            <div>&#123;</div>
-            <div className="pl-4">Name = <span className="text-orange-300">"Muhammad Usman Ali"</span>,</div>
-            <div className="pl-4">Role = <span className="text-orange-300">"Senior Full-Stack .NET Engineer"</span>,</div>
-            <div className="pl-4">Frameworks = [<span className="text-emerald-400">".NET Core 8"</span>, <span className="text-emerald-400">"ASP.NET MVC"</span>, <span className="text-emerald-400">"Blazor"</span>],</div>
-            <div className="pl-4">Architecture = [<span className="text-blue-400">"Clean Architecture"</span>, <span className="text-blue-400">"SOLID"</span>, <span className="text-blue-400">"Event-Driven"</span>],</div>
-            <div className="pl-4">Database = <span className="text-teal-400">new</span>()</div>
-            <div className="pl-4">&#123;</div>
-            <div className="pl-8">Relational = <span className="text-amber-400">"SQL Server"</span>,</div>
-            <div className="pl-8">NoSql = <span className="text-emerald-400">"MongoDB"</span>,</div>
-            <div className="pl-8">Orm = <span className="text-purple-400">"Entity Framework Core"</span>,</div>
-            <div className="pl-8">Tuning = [<span className="text-orange-400">"Stored Procedures"</span>, <span className="text-orange-400">"Indexing Optimization"</span>]</div>
-            <div className="pl-4">&#125;,</div>
-            <div className="pl-4">Integrations = <span className="text-teal-400">new</span>()</div>
-            <div className="pl-4">&#123;</div>
-            <div className="pl-8">Telephony = [<span className="text-indigo-400">"Twilio SMS/Voice"</span>, <span className="text-indigo-400">"WhatsApp Business API"</span>],</div>
-            <div className="pl-8">Payments = <span className="text-indigo-400">"Stripe Subscriptions & Webhooks"</span>,</div>
-            <div className="pl-8">Enterprise = [<span className="text-indigo-400">"CargoWise API"</span>, <span className="text-indigo-400">"Haulage APIs"</span>]</div>
-            <div className="pl-4">&#125;,</div>
-            <div className="pl-4 text-zinc-500">// Real-time event layers and state pipelines</div>
-            <div className="pl-4">AsyncFlow = [<span className="text-teal-400">"RabbitMQ"</span>, <span className="text-teal-400">"SignalR Hubs"</span>, <span className="text-teal-400">"Hangfire"</span>],</div>
-            <div className="pl-4">CompilesCleanly = <span className="text-teal-400">true</span></div>
-            <div>&#125;;</div>
+            {/* Terminal Body */}
+            <div className="p-6 md:p-8 font-mono text-[13px] md:text-sm text-zinc-400 leading-relaxed overflow-x-auto">
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">1</span>
+                <span><span className="text-purple-400">public class</span> <span className="text-yellow-300">UsmanAli</span> : <span className="text-cyan-400">ISoftwareEngineer</span></span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">2</span>
+                <span>{"{"}</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">3</span>
+                <span className="pl-4"><span className="text-purple-400">public string</span> <span className="text-blue-400">Name</span> = <span className="text-orange-300">"Muhammad Usman Ali"</span>;</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">4</span>
+                <span className="pl-4"><span className="text-purple-400">public string</span> <span className="text-blue-400">Role</span> = <span className="text-orange-300">"Senior Full-Stack .NET Engineer"</span>;</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">5</span>
+                <span className="pl-4"><span className="text-purple-400">public string</span>[] <span className="text-blue-400">Frameworks</span> = {"{"}</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">6</span>
+                <span className="pl-8"><span className="text-emerald-400">".NET Core 8"</span>, <span className="text-emerald-400">"ASP.NET MVC"</span>, <span className="text-emerald-400">"Blazor"</span>, <span className="text-emerald-400">"Web API"</span></span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">7</span>
+                <span className="pl-4">{"}"};</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">8</span>
+                <span className="pl-4"><span className="text-purple-400">public</span> <span className="text-cyan-400">Architecture</span> <span className="text-blue-400">Patterns</span> = <span className="text-purple-400">new</span>()</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">9</span>
+                <span className="pl-4">{"{"}</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">10</span>
+                <span className="pl-8"><span className="text-blue-400">CleanArch</span> = <span className="text-emerald-400">true</span>, <span className="text-blue-400">SOLID</span> = <span className="text-emerald-400">true</span>, <span className="text-blue-400">EventDriven</span> = <span className="text-emerald-400">true</span></span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">11</span>
+                <span className="pl-4">{"}"};</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">12</span>
+                <span className="pl-4"><span className="text-purple-400">public</span> <span className="text-cyan-400">DatabaseLayer</span> <span className="text-blue-400">Data</span> = <span className="text-purple-400">new</span>()</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">13</span>
+                <span className="pl-4">{"{"}</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">14</span>
+                <span className="pl-8"><span className="text-blue-400">Relational</span> = <span className="text-orange-300">"SQL Server"</span>, <span className="text-blue-400">NoSql</span> = <span className="text-orange-300">"MongoDB"</span>,</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">15</span>
+                <span className="pl-8"><span className="text-blue-400">Orm</span> = <span className="text-orange-300">"Entity Framework Core"</span>, <span className="text-blue-400">Tuning</span> = <span className="text-orange-300">"Indexing & Stored Procs"</span></span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">16</span>
+                <span className="pl-4">{"}"};</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">17</span>
+                <span className="pl-4 text-zinc-600">// Enterprise integrations & real-time event layers</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">18</span>
+                <span className="pl-4"><span className="text-purple-400">public string</span>[] <span className="text-blue-400">Integrations</span> = {"{"}</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">19</span>
+                <span className="pl-8"><span className="text-indigo-400">"CargoWise API"</span>, <span className="text-indigo-400">"Stripe"</span>, <span className="text-indigo-400">"Twilio"</span>, <span className="text-indigo-400">"WhatsApp Business"</span>, <span className="text-indigo-400">"SignalR"</span></span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">20</span>
+                <span className="pl-4">{"}"};</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">21</span>
+                <span className="pl-4"><span className="text-purple-400">public bool</span> <span className="text-blue-400">CompilesCleanly</span> = <span className="text-emerald-400">true</span>;</span>
+              </div>
+              <div className="flex">
+                <span className="text-zinc-600 select-none mr-4 text-right w-6">22</span>
+                <span>{"}"}</span>
+              </div>
+            </div>
           </div>
         </div>
 
